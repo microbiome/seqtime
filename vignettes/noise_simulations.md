@@ -1,6 +1,6 @@
 ---
 title: "Noise simulation examples"
-date: "2017-04-22"
+date: "2018-01-10"
 output: 
   rmarkdown::html_vignette:
     toc: true
@@ -49,10 +49,10 @@ Hwhite <- hurstexp(w@left, d = 128)
 ```
 
 ```
-## Simple R/S Hurst estimation:         0.5339983 
-## Corrected R over S Hurst exponent:   0.5552242 
-## Empirical Hurst exponent:            0.5440915 
-## Corrected empirical Hurst exponent:  0.528688 
+## Simple R/S Hurst estimation:         0.5275683 
+## Corrected R over S Hurst exponent:   0.5214487 
+## Empirical Hurst exponent:            0.4889119 
+## Corrected empirical Hurst exponent:  0.4739127 
 ## Theoretical Hurst exponent:          0.5155387
 ```
 
@@ -61,10 +61,10 @@ Hbrown <- hurstexp(b, d = 128)
 ```
 
 ```
-## Simple R/S Hurst estimation:         0.9200454 
-## Corrected R over S Hurst exponent:   1.008285 
-## Empirical Hurst exponent:            1.010854 
-## Corrected empirical Hurst exponent:  1.00679 
+## Simple R/S Hurst estimation:         0.9226298 
+## Corrected R over S Hurst exponent:   1.011261 
+## Empirical Hurst exponent:            0.9984143 
+## Corrected empirical Hurst exponent:  0.9943425 
 ## Theoretical Hurst exponent:          0.5155387
 ```
 
@@ -73,10 +73,10 @@ Hpink <- hurstexp(p@left, d = 128)
 ```
 
 ```
-## Simple R/S Hurst estimation:         0.8222468 
-## Corrected R over S Hurst exponent:   0.9071658 
-## Empirical Hurst exponent:            0.9215461 
-## Corrected empirical Hurst exponent:  0.9152268 
+## Simple R/S Hurst estimation:         0.8138709 
+## Corrected R over S Hurst exponent:   0.9094859 
+## Empirical Hurst exponent:            0.9307558 
+## Corrected empirical Hurst exponent:  0.9245416 
 ## Theoretical Hurst exponent:          0.5155387
 ```
 

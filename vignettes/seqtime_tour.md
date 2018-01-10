@@ -1,7 +1,7 @@
 ---
 title: "Tour through seqtime - Properties of time series generated with different ecological models"
 author: "Karoline Faust"
-date: "2017-04-22"
+date: "2018-01-10"
 output: 
   rmarkdown::html_vignette:
     toc: true
@@ -48,8 +48,8 @@ A=modifyA(A,perc=70,strength="uniform",mode="negpercent")
 ```
 ## [1] "Initial edge number 295"
 ## [1] "Initial connectance 0.1"
-## [1] "Number of negative edges already present: 168"
-## [1] "Converting 38 edges into negative edges"
+## [1] "Number of negative edges already present: 182"
+## [1] "Converting 24 edges into negative edges"
 ## [1] "Final connectance: 0.1"
 ```
 
@@ -91,7 +91,7 @@ ricker.taylor=seqtime::taylor(out.ricker, pseudo=0.0001, col="green", type="tayl
 ```
 
 ```
-## [1] "Adjusted R2: 0.056685808324661"
+## [1] "Adjusted R2: 0.0800024547992958"
 ```
 
 ![plot of chunk unnamed-chunk-5](figure_seqtime_tour/unnamed-chunk-5-1.png)
@@ -137,7 +137,7 @@ soi.taylor=seqtime::taylor(out.soi, pseudo=0.0001, col="blue", type="taylor")
 ```
 
 ```
-## [1] "Adjusted R2: 0.979020201012835"
+## [1] "Adjusted R2: 0.938137083469221"
 ```
 
 ![plot of chunk unnamed-chunk-8](figure_seqtime_tour/unnamed-chunk-8-1.png)
@@ -151,10 +151,10 @@ soi.noise=identifyNoisetypes(out.soi,abund.threshold=0)
 
 ```
 ## [1] "Number of taxa below the abundance threshold:  1"
-## [1] "Number of taxa with non-significant power spectrum laws:  11"
-## [1] "Number of taxa with non-classified power spectrum:  24"
+## [1] "Number of taxa with non-significant power spectrum laws:  12"
+## [1] "Number of taxa with non-classified power spectrum:  21"
 ## [1] "Number of taxa with white noise:  0"
-## [1] "Number of taxa with pink noise:  11"
+## [1] "Number of taxa with pink noise:  13"
 ## [1] "Number of taxa with brown noise:  3"
 ## [1] "Number of taxa with black noise:  0"
 ```
@@ -183,7 +183,7 @@ hubbell.taylor=seqtime::taylor(out.hubbell, pseudo=0.0001, col="blue", type="tay
 ```
 
 ```
-## [1] "Adjusted R2: 0.910522223156054"
+## [1] "Adjusted R2: 0.923931356875318"
 ```
 
 ![plot of chunk unnamed-chunk-11](figure_seqtime_tour/unnamed-chunk-11-1.png)
@@ -198,10 +198,10 @@ hubbell.noise=identifyNoisetypes(out.hubbell,abund.threshold=0)
 ```
 ## [1] "Number of taxa below the abundance threshold:  1"
 ## [1] "Number of taxa with non-significant power spectrum laws:  0"
-## [1] "Number of taxa with non-classified power spectrum:  29"
+## [1] "Number of taxa with non-classified power spectrum:  26"
 ## [1] "Number of taxa with white noise:  0"
 ## [1] "Number of taxa with pink noise:  0"
-## [1] "Number of taxa with brown noise:  20"
+## [1] "Number of taxa with brown noise:  23"
 ## [1] "Number of taxa with black noise:  0"
 ```
 
@@ -229,7 +229,7 @@ dm.uneven.taylor=seqtime::taylor(dm.uneven, pseudo=0.0001, col="orange", type="t
 ```
 
 ```
-## [1] "Adjusted R2: 0.984134135763677"
+## [1] "Adjusted R2: 0.981969527178935"
 ```
 
 ![plot of chunk unnamed-chunk-14](figure_seqtime_tour/unnamed-chunk-14-1.png)
@@ -243,8 +243,8 @@ dm.uneven.noise=identifyNoisetypes(dm.uneven,abund.threshold=0)
 
 ```
 ## [1] "Number of taxa below the abundance threshold:  0"
-## [1] "Number of taxa with non-significant power spectrum laws:  46"
-## [1] "Number of taxa with non-classified power spectrum:  4"
+## [1] "Number of taxa with non-significant power spectrum laws:  45"
+## [1] "Number of taxa with non-classified power spectrum:  5"
 ## [1] "Number of taxa with white noise:  0"
 ## [1] "Number of taxa with pink noise:  0"
 ## [1] "Number of taxa with brown noise:  0"
@@ -266,7 +266,7 @@ dm.even.taylor=seqtime::taylor(dm.even, pseudo=0.0001, col="orange", type="taylo
 ```
 
 ```
-## [1] "Adjusted R2: 0.355717117410069"
+## [1] "Adjusted R2: 0.375606436484858"
 ```
 
 ![plot of chunk unnamed-chunk-16](figure_seqtime_tour/unnamed-chunk-16-1.png)

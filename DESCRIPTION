@@ -1,6 +1,6 @@
 Package: seqtime
 Title: Time Series Analysis of Sequencing Data
-Version: 0.1.1
+Version: 0.1.10002
 Authors@R: c(person("Karoline", "Faust", email = "karoline.faust@kuleuven.be", role = c("aut", "cre")),
              person("Franziska", "Bauchinger", role = "aut"),
              person("Sophie", "de Buyl", role = "aut"),
